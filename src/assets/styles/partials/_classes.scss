@@ -1,0 +1,30 @@
+.carte {
+  border: 1px solid var(--border);
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+}
+.carte:hover {
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.bouton {
+  max-width: 200px;
+  padding: 10px;
+  background-color: var(--accent);
+  color: var(--text);
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-family: var(--decorative-font);
+  font-weight: bold;
+  border: 3px solid var(--accent);
+}
+.bouton:hover {
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.cache {
+  display: none;
+}

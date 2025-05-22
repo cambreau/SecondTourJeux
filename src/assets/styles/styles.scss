@@ -1,0 +1,73 @@
+@use "./partials/base";
+@use "./partials/classes";
+@use "./partials/media-queries";
+@use "./partials/reset";
+@use "./partials/utils";
+@use "./partials/variables";
+
+* {
+  font-family: var(--base-font);
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header {
+  background-color: var(--primary);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 20px;
+}
+
+.titre-logo {
+  display: flex;
+  gap: 10px;
+}
+
+.titre-logo h1 {
+  font-family: var(--decorative-font);
+}
+
+.nav-principal {
+  justify-items: end;
+}
+.nav-principal ul {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-principal ul li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+h1 {
+  color: white;
+}
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
